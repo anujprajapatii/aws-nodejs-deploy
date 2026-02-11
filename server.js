@@ -3,7 +3,11 @@ const app = express();
 
 
 app.get('/api/get', (req, res) => {
-    res.send({ message: 'hello back to nodejs' });
+    res.send({ message: 'back to nodejs' });
+});
+
+app.get('/', (req, res) => {
+    res.send("AWS Deployment Successful 🚀");
 });
 
 
